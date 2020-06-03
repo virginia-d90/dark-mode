@@ -8,8 +8,9 @@ const useDarkMode = (toggle) => {
     useEffect(() => {
        if(someValue) {
            window.document.body.classList.add('dark-mode')
-       } 
-
+       } else {
+           window.document.body.classList.remove('dark-mode')
+       }
     }, [someValue])
 
     return [someValue, setSomeValue]
